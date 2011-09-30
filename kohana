@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-include_once getcwd()."/modules".DIRECTORY_SEPARATOR."kohana-cli".DIRECTORY_SEPARATOR."bootstrap.php";
+include_once getcwd().DIRECTORY_SEPARATOR."modules".DIRECTORY_SEPARATOR."kohana-cli".DIRECTORY_SEPARATOR."bootstrap.php";
 
 function load_command_file($command)
 {
