@@ -11,6 +11,7 @@ Each method accepts unlimited number of attributes after its name on the command
 
 ## Example
 ```php
+<?php
 // application/command/script.php
 class Command_Script extends Command{
 	public function fix_bug
@@ -56,8 +57,8 @@ For each method in the command class you can add a constant string with the meth
 
 ## Example
 ```php
-// application/command/script.php
 <?php
+// application/command/script.php
 class Command_Script extends Command{
 
 	const FIX_BUG_BRIEF = "This is a fix bug command";
