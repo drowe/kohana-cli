@@ -57,6 +57,7 @@ For each method in the command class you can add a constant string with the meth
 ## Example
 ```php
 // application/command/script.php
+<?php
 class Command_Script extends Command{
 
 	const FIX_BUG_BRIEF = "This is a fix bug command";
