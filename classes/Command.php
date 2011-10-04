@@ -94,6 +94,29 @@ class Command
 	}
 
 	/**
+	 * Generate a file from a template in a "templates" directory with a .tpl extension
+	 * @param string $name 
+	 * @param array $decorations substitutions 
+	 * @return string 
+	 */
+	static public function set_template($filename, $name, $decorations = null)
+	{
+		$template_filename = Kohana::find_file('templates', $name, 'tpl');
+
+		if( ! $template_filename )
+			throw new Kohana_Exception("Kohana Exception does not exist: :name", array(":name" => $name));
+		
+		$template = file_get_contents($template_filename);
+
+		if( $decorations )
+		{
+			$template = strtr($template, $decorations);   
+		}
+		if( ! is_file($filename))
+			file_put_contents($filename, $template);
+	}
+
+	/**
 	 * Perform a function and echo on start and finish, displaying the time spent
 	 * @param string|array $func A callable string / array of class and method name
 	 * @param array $args An array of arguments to pass to the function
