@@ -48,13 +48,13 @@ class Command_Generate extends Command
 
 			$this->set_template(
 				MODPATH.$name.DIRECTORY_SEPARATOR.'guide'.DIRECTORY_SEPARATOR.$module_name.DIRECTORY_SEPARATOR.'index.md',
-				'module_userguide_menu',
+				'module_userguide_index',
 				 array('{module_title}' => $module_title)
 			);
 
 			$this->set_template(
 				MODPATH.$name.DIRECTORY_SEPARATOR.'guide'.DIRECTORY_SEPARATOR.$module_name.DIRECTORY_SEPARATOR.'menu.md',
-				'module_userguide_index',
+				'module_userguide_menu',
 				 array('{module_title}' => $module_title)
 			);
 
