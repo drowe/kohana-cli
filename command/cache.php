@@ -3,8 +3,10 @@
 /**
  * Command_Cache class a simple command to clear cache
  *
- * @package Kohana-Cli
- * @author Ivan K
+ * @package    OpenBuildings/timestamped-migrations
+ * @author     Ivan K
+ * @copyright  (c) 2011 OpenBuildings
+ * @license    http://creativecommons.org/licenses/by-sa/3.0/legalcode
  **/
 class Command_Cache extends Command
 {

@@ -5,8 +5,10 @@
  *
  * A class to be extended by all commands in the application, provides some logging methods
  *
- * @package		Kohana-Cli
- * @author		Ivan K
+ * @package    OpenBuildings/kohana-cli
+ * @author     Ivan K
+ * @copyright  (c) 2011 OpenBuildings
+ * @license    http://creativecommons.org/licenses/by-sa/3.0/legalcode
  */
 class Command
 {
