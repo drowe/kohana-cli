@@ -91,6 +91,7 @@ class Command
 		{
 			echo $string."\n";	
 		}
+		ob_flush();
 	}
 
 	/**

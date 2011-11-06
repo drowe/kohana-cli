@@ -37,7 +37,7 @@ define('EXT', '.php');
  * this bootstrap file somewhere else then you'll need to modify this value to 
  * compensate.
  */
-define('DOCROOT', realpath(dirname(__FILE__).'/../../').DIRECTORY_SEPARATOR);
+define('DOCROOT', realpath(dirname(__FILE__).'/../../').DIRECTORY_SEPARATOR.'web'.DIRECTORY_SEPARATOR);
 
 /**
  * Set the PHP error reporting level. If you set this in php.ini, you remove this.
@@ -106,8 +106,8 @@ if ( ! defined('KOHANA_START_MEMORY'))
 // Bootstrap the application
 require APPPATH.'bootstrap'.EXT;
 
-// Disable output buffering
-ob_end_flush();
-
 // Enable the unittest module
-Kohana::modules(Kohana::modules() + array('kohana-cli' => MODPATH.'kohana-cli'));
+Kohana::modules(Kohana::modules() + array(
+	'kohana-cli' => MODPATH.'kohana-cli',
+	'timestamped-migrations' => MODPATH.'timestamped-migrations',
+));

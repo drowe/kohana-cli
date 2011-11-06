@@ -16,7 +16,6 @@ function load_command_file($command)
 }
 
 try{
-
 	if ( ! (php_sapi_name() == 'cli' && empty($_SERVER['REMOTE_ADDR'])) )
 	{
 		throw new Kohana_Exception("This can only be executed from the command line");
