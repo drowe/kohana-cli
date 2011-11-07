@@ -1,4 +1,8 @@
-# Getting started
+# Blog Post
+
+[https://github.com/OpenBuildings/kohana-cli](https://github.com/OpenBuildings/kohana-cli)
+
+## Getting started
 
 This module offers the ability to quickly create command line interfaces for your project
 
