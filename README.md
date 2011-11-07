@@ -1,6 +1,6 @@
 # Blog Post
 
-[https://github.com/OpenBuildings/kohana-cli](https://github.com/OpenBuildings/kohana-cli)
+[http://ivank.github.com/blog/2011/11/command-line-interfaces-rule/](http://ivank.github.com/blog/2011/11/command-line-interfaces-rule/)
 
 ## Getting started
 
