@@ -5,14 +5,14 @@
  *
  * @see  http://kohanaframework.org/guide/about.install#application
  */
-$application = 'application';
+$application = realpath(dirname(__FILE__).'/../../').DIRECTORY_SEPARATOR.'application';
 
 /**
  * The directory in which your modules are located.
  *
  * @see  http://kohanaframework.org/guide/about.install#modules
  */
-$modules = 'modules';
+$modules = realpath(dirname(__FILE__).'/../../').DIRECTORY_SEPARATOR.'modules';
 
 /**
  * The directory in which the Kohana resources are located. The system
@@ -20,7 +20,7 @@ $modules = 'modules';
  *
  * @see  http://kohanaframework.org/guide/about.install#system
  */
-$system = 'system';
+$system = realpath(dirname(__FILE__).'/../../').DIRECTORY_SEPARATOR.'system';
 
 /**
  * The default extension of resource files. If you change this, all resources
