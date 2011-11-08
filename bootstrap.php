@@ -107,7 +107,9 @@ if ( ! defined('KOHANA_START_MEMORY'))
 require APPPATH.'bootstrap'.EXT;
 
 // Enable the unittest module
-Kohana::modules(Kohana::modules() + array(
+Kohana::modules(array(
 	'kohana-cli' => MODPATH.'kohana-cli',
 	'timestamped-migrations' => MODPATH.'timestamped-migrations',
-));
+	) +
+	Kohana::modules()
+);
